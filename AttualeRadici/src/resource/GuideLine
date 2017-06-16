@@ -1,0 +1,13 @@
+return
+0 mean everything Okay
+1 means something which I expecting to go wrong went wrong
+-1 means something which I didn't expect went wrong
+
+
+
+
+If you only want to store the image, without doing any operation on it, the best option is to use an array of byte.
+byte[] picture;
+Here's how to convert a file into a byte[]: http://www.mkyong.com/java/how-to-convert-file-into-an-array-of-bytes/
+
+And here's the opposite conversion: http://www.mkyong.com/java/how-to-convert-array-of-bytes-into-file/

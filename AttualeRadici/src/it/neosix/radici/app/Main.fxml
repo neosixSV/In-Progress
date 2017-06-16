@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane pickOnBounds="false" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.neosix.radici.controller.MainController">
+   <top>
+      <MenuBar fx:id="menubar" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleNew" text="New Project" />
+              <MenuItem mnemonicParsing="false" onAction="#handleOpen" text="Open Project" />
+              <MenuItem fx:id="close" disable="true" mnemonicParsing="false" onAction="#handleClose" text="Close Project" />              
+                  <SeparatorMenuItem mnemonicParsing="false" />             
+              <MenuItem fx:id="export" disable="true" mnemonicParsing="false" onAction="#handleExport" text="Export Project" />
+              <MenuItem fx:id="saveAs" disable="true" mnemonicParsing="false" onAction="#handleSaveAs" text="Save As ..." />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem mnemonicParsing="false" onAction="#handleExit" text="Exit" /> 
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+            </items>
+          </Menu>
+          <Menu fx:id="anagrafiche" disable="true" mnemonicParsing="false" text="Progetto">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleAnagrafiche" text="Anagrafiche" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="About" />  
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <Label fx:id="footerlabel" text="" BorderPane.alignment="CENTER_LEFT" />
+   </bottom>
+   <padding>
+      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+   </padding>
+</BorderPane>

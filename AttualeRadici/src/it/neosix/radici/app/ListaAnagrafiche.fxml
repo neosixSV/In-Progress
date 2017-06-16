@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="it.neosix.radici.controller.ListaAnagraficheController">
+   <children>
+      <TableView fx:id="personeTable" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <columns>
+			<TableColumn fx:id="nomeColumn" prefWidth="75.0" text="Nome" />
+			<TableColumn fx:id="cognomeColumn" prefWidth="75.0" text="Cognome" />
+			<TableColumn fx:id="sessoColumn" prefWidth="75.0" text="Sesso" />
+			<TableColumn fx:id="luogoNascitaColumn" prefWidth="150.0" text="Luogo di Nascita" />
+			<TableColumn fx:id="dataNascitaColumn" prefWidth="150.0" text="Data di Nascita" />
+			<TableColumn fx:id="dataMorteColumn" prefWidth="150.0" text="Data di Morte" />
+			<TableColumn fx:id="fotoColumn" prefWidth="150.0" text="Foto" />
+        </columns>
+        <columnResizePolicy>
+			<TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+		</columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>
