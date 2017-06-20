@@ -1,9 +1,6 @@
 package it.neosix.radici.app;
 	
 import java.io.IOException;
-
-import it.neosix.radici.controller.AnagraficaController;
-import it.neosix.radici.controller.ListaAnagraficheController;
 import it.neosix.radici.controller.MainController;
 import it.neosix.radici.controller.NewProjectController;
 import it.neosix.radici.model.Persona;
@@ -34,6 +31,15 @@ public class Main extends Application {
      */
     private ObservableList<Persona> personData = FXCollections.observableArrayList();
 		
+    /**
+     * Returns the data as an observable list of Persons. 
+     * @return
+     */
+    public ObservableList<Persona> getPersonData() {
+        return personData;
+    }
+    
+    
 	@Override
 	public void start(Stage primaryStage) {
 
